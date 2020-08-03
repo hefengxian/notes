@@ -5,8 +5,8 @@
   "background_color": "#ffffff",
   "display": "standalone",
   "orientation": "portrait",
-  "Scope": "/",
-  "start_url": "/",
+  "Scope": "/notes/",
+  "start_url": "/notes/",
   "icons": [
     {
       "src": "assets/icons/icon-72x72.png",
