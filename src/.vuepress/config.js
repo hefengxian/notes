@@ -1,4 +1,5 @@
 module.exports = {
+    base: '/notes/',
     title: 'Notes',
     head: [
         ['link', { rel: 'icon', href: '/favicon.png' }]
