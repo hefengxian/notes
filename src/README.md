@@ -1,7 +1,7 @@
 ---
 home: true
 heroImage: /assets/img/logo.svg
-heroText: 𝓕𝓻𝓪𝓷𝓴.𝓗 的笔记
+heroText: 𝓕𝓻𝓪𝓷𝓴.𝓗 𝓝𝓸𝓽𝓮𝓼
 tagline: 记录日常生活
 # actionText: 快速上手 →
 actionLink: /zh/guide/
