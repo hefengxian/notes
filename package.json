@@ -10,6 +10,7 @@
     "build": "vuepress build src"
   },
   "devDependencies": {
+    "dayjs": "^1.8.31",
     "vuepress": "^1.5.2"
   }
 }
