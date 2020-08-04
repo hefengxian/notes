@@ -57,6 +57,9 @@ module.exports = {
                 updatePopup: {
                     message: "发现新内容可用",
                     buttonText: "刷新"
+                },
+                generateSWConfig: {
+                    skipWaiting: true,
                 }
             }
         ],
