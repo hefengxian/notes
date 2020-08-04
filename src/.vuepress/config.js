@@ -50,7 +50,16 @@ module.exports = {
 
     plugins: [
         '@vuepress/back-to-top',
-        '@vuepress/pwa',
+        [
+            '@vuepress/pwa',
+            {
+                serviceWorker: true,
+                updatePopup: {
+                    message: "发现新内容可用",
+                    buttonText: "刷新"
+                }
+            }
+        ],
         [
             '@vuepress/last-updated',
             {
