@@ -12,6 +12,7 @@ features:
   details: 生活中的感悟，自我反思，总结。
 - title: 个人计划
   details: 记录个人计划的进度，日志。
+footer: powered by vuepress
 ---
 
 
@@ -51,3 +52,47 @@ c2(yes)->io->e
 c2(no)->op2->e
 @flowend
 
+
+### Badge
+
+- default <Badge text="Hello" />
+- type: warning, vertical: middle <Badge text="Hello" type="warning" vertical="middle" />
+- type: error, vertical: middle <Badge text="Hello" type="error" vertical="middle" />
+
+
+### Markdown Container
+
+::: tip 小提示
+这是一个提示
+:::
+
+::: warning
+这是一个警告
+:::
+
+::: danger STOP
+这是一个错误！
+:::
+
+::: details
+这是一个详情块，在 IE / Edge 中不生效
+:::
+
+
+### 代码高亮
+
+```html {3-4,6}
+<ul>
+  <li
+    v-for="todo in todos"
+    :key="todo.id"
+  >
+    {{ todo.text }}
+  </li>
+</ul>
+```
+
+```php
+<?php
+phpinfo();
+```
