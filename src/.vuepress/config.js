@@ -1,6 +1,7 @@
 require('dayjs/locale/zh-cn')
 const dayjs = require('dayjs')
 dayjs.extend(require('dayjs/plugin/relativeTime'))
+dayjs.extend(require('dayjs/plugin/localizedFormat'))
 dayjs.locale('zh-cn')
 
 module.exports = {
@@ -20,8 +21,9 @@ module.exports = {
         ['meta', { name: 'msapplication-TileImage', content: '/assets/img/logo.png' }],
         ['meta', { name: 'msapplication-TileColor', content: '#000000' }]
     ],
+    theme: 'default-prefers-color-scheme',
     themeConfig: {
-        logo: '/assets/img/logo.svg',
+        logo: '/assets/img/logo.png',
         lastUpdated: '上次更新',
         search: false,
         searchMaxSuggestions: 10,
@@ -52,8 +54,15 @@ module.exports = {
         [
             '@vuepress/last-updated',
             {
-                transformer: (timestamp, lang) => dayjs(timestamp).fromNow()
+                transformer: (timestamp, lang) => dayjs(timestamp).format('llll')
             }
-        ]
+        ],
+        [
+            'vuepress-plugin-mathjax',
+            {
+                target: 'svg',
+            },
+        ],
+        'flowchart',
     ],
 }
