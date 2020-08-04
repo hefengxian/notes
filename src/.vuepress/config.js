@@ -9,7 +9,7 @@ module.exports = {
     title: '𝓝𝓸𝓽𝓮𝓼',
     head: [
         ['link', { rel: 'icon', href: '/favicon.png' }],
-        ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1' }],
+        ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' }],
 
         ['link', { rel: 'icon', href: '/assets/img/logo.png' }],
         ['link', { rel: 'manifest', href: '/manifest.json' }],
