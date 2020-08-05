@@ -21,6 +21,11 @@ module.exports = {
         ['meta', { name: 'msapplication-TileImage', content: '/assets/img/logo-round.png' }],
         ['meta', { name: 'msapplication-TileColor', content: '#000000' }]
     ],
+    markdown: {
+        extendMarkdown: md => {
+            md.use(require('markdown-it-task-lists'))
+        }
+    },
     theme: 'default-prefers-color-scheme',
     themeConfig: {
         logo: '/assets/img/logo-round.png',

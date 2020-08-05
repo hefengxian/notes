@@ -13,6 +13,7 @@
     "@vuepress/plugin-back-to-top": "^1.5.2",
     "@vuepress/plugin-pwa": "^1.5.2",
     "dayjs": "^1.8.31",
+    "markdown-it-task-lists": "^2.1.1",
     "vuepress": "^1.5.2",
     "vuepress-plugin-flowchart": "^1.4.3",
     "vuepress-plugin-mathjax": "^1.2.8",
