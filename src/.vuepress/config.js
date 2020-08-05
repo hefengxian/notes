@@ -25,6 +25,8 @@ module.exports = {
     themeConfig: {
         logo: '/assets/img/logo.png',
         lastUpdated: '上次更新',
+        sidebar: 'auto',
+        sidebarDepth: 5,
         // search: false,
         searchMaxSuggestions: 10,
         nav: [
