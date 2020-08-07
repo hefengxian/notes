@@ -23,3 +23,8 @@ footer: powered by vuepress
 ### macOS
 
 - [PHP 升级之后编译 OCI8、PDO_OCI](note/dev/2020-08-06-macos-php-upgrade-compile-extension.md)
+
+
+### Ubuntu
+
+- [卸载 snap](note/dev/2020-08-07-ubuntu-remove-snap.md)
