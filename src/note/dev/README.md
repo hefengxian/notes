@@ -12,3 +12,8 @@ tags:
 ## Ubuntu
 
 - [卸载 snap](2020-08-07-ubuntu-remove-snap.md)
+
+
+## Oracle
+
+- [Oracle 通过 DBLink 查询带 *LOB 表](2020-08-07-oracle-query-lob-table-via-dblink.md)
