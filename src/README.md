@@ -17,6 +17,14 @@ footer: powered by vuepress
 ---
 
 
+## Change Log
+
+- [如何卸载腾讯云的监控服务](note/dev/2020-08-17-uninstall-tencent-cloud-monitor-service.md)
+- [PHP 升级之后编译 OCI8、PDO_OCI](note/dev/2020-08-06-macos-php-upgrade-compile-extension.md)
+- [卸载 snap](note/dev/2020-08-07-ubuntu-remove-snap.md)
+- [Oracle 通过 DBLink 查询带 *LOB 表](note/dev/2020-08-07-oracle-query-lob-table-via-dblink.md)
+
+
 ## 目录
 
 
@@ -33,3 +41,8 @@ footer: powered by vuepress
 ### Oracle
 
 - [Oracle 通过 DBLink 查询带 *LOB 表](note/dev/2020-08-07-oracle-query-lob-table-via-dblink.md)
+
+
+### 其他
+
+[如何卸载腾讯云的监控服务](note/dev/2020-08-17-uninstall-tencent-cloud-monitor-service.md)

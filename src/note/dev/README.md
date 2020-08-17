@@ -17,3 +17,8 @@ tags:
 ## Oracle
 
 - [Oracle 通过 DBLink 查询带 *LOB 表](2020-08-07-oracle-query-lob-table-via-dblink.md)
+
+
+## 其他
+
+- [如何卸载腾讯云的监控服务](2020-08-17-uninstall-tencent-cloud-monitor-service.md)
