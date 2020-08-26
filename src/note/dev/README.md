@@ -22,3 +22,4 @@ tags:
 ## 其他
 
 - [如何卸载腾讯云的监控服务](2020-08-17-uninstall-tencent-cloud-monitor-service.md)
+- [安装 FRP 进行内网穿透](2020-08-26-install-frp.md)

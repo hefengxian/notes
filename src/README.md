@@ -19,6 +19,7 @@ footer: powered by vuepress
 
 ## Change Log
 
+- [安装 FRP 进行内网穿透](note/dev/2020-08-26-install-frp.md)
 - [如何卸载腾讯云的监控服务](note/dev/2020-08-17-uninstall-tencent-cloud-monitor-service.md)
 - [PHP 升级之后编译 OCI8、PDO_OCI](note/dev/2020-08-06-macos-php-upgrade-compile-extension.md)
 - [卸载 snap](note/dev/2020-08-07-ubuntu-remove-snap.md)
@@ -45,4 +46,5 @@ footer: powered by vuepress
 
 ### 其他
 
-[如何卸载腾讯云的监控服务](note/dev/2020-08-17-uninstall-tencent-cloud-monitor-service.md)
+- [安装 FRP 进行内网穿透](note/dev/2020-08-26-install-frp.md)
+- [如何卸载腾讯云的监控服务](note/dev/2020-08-17-uninstall-tencent-cloud-monitor-service.md)
