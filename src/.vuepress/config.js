@@ -83,5 +83,6 @@ module.exports = {
             },
         ],
         'flowchart',
+        '@vuepress/medium-zoom',
     ],
 }
