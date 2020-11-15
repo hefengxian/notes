@@ -50,6 +50,8 @@ tags:
 
 ## 如何做笔记
 
+![思维导图](./assets/how-2-take-note-mind-map.png)
+
 做笔记的核心目的是什么？
 
 - 最大的吸收效果
