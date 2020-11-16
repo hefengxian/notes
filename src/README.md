@@ -19,6 +19,7 @@ footer: powered by vuepress
 
 ## Change Log
 
+- [如何规划自己的人生-阅读笔记](note/read/2020-11-16-how-2-do-life-plan.md)
 - [如何做笔记-阅读笔记](note/read/2020-11-13-how-2-take-notes.md)
 - [【转载】一个拖延患者的自我救赎](note/read/2020-10-10-how-2-defeat-procrastination.md)
 - [安装 FRP 进行内网穿透](note/dev/2020-08-26-install-frp.md)
