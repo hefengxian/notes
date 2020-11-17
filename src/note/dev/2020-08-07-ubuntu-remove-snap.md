@@ -24,10 +24,9 @@ systemctl stop snapd.service
 
 ```bash
 sudo apt purge snapd
-rm -vrf ~/snap
 
 # following may not be required as apt purge already removes them
-sudo rm -vrf /snap /var/snap /var/lib/snapd /var/cache/snapd /usr/lib/snapd
+sudo rm -vrf ~/snap /snap /var/snap /var/lib/snapd /var/cache/snapd /usr/lib/snapd
 
 # trying to install some package like chromium-browser will bring back snapd
 # make sure snapd is not installed as a dependency anymore
