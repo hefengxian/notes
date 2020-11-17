@@ -19,9 +19,10 @@ footer: powered by vuepress
 
 ## Change Log
 
+- [2 分钟规则-转载](note/read/2020-11-17-2-minute-rule.md)
 - [如何规划自己的人生-阅读笔记](note/read/2020-11-16-how-2-do-life-plan.md)
 - [如何做笔记-阅读笔记](note/read/2020-11-13-how-2-take-notes.md)
-- [【转载】一个拖延患者的自我救赎](note/read/2020-10-10-how-2-defeat-procrastination.md)
+- [一个拖延患者的自我救赎-转载](note/read/2020-10-10-how-2-defeat-procrastination.md)
 - [安装 FRP 进行内网穿透](note/dev/2020-08-26-install-frp.md)
 - [如何卸载腾讯云的监控服务](note/dev/2020-08-17-uninstall-tencent-cloud-monitor-service.md)
 - [PHP 升级之后编译 OCI8、PDO_OCI](note/dev/2020-08-06-macos-php-upgrade-compile-extension.md)
