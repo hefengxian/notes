@@ -36,6 +36,7 @@ module.exports = {
         searchMaxSuggestions: 10,
         nav: [
             {text: '主页', link: '/'},
+            {text: 'English', link: '/english/'},
             {
                 text: '笔记',
                 items: [
