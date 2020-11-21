@@ -16,9 +16,14 @@ features:
 footer: powered by vuepress
 ---
 
+## &nbsp;
+
+<center>Get busy living or get busy dying</center>
+
 
 ## Change Log
 
+- [Difference Between TO & FOR](english/2020-11-21-difference-between-to-for.md)
 - [2 分钟规则-转载](note/read/2020-11-17-2-minute-rule.md)
 - [如何规划自己的人生-阅读笔记](note/read/2020-11-16-how-2-do-life-plan.md)
 - [如何做笔记-阅读笔记](note/read/2020-11-13-how-2-take-notes.md)
