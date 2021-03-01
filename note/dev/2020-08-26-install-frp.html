@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>安装 frp 进行内网穿透 | 𝓝𝓸𝓽𝓮𝓼</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    <link rel="icon" href="/notes/favicon.png">
+    <link rel="icon" href="/notes/assets/img/logo-round.png">
+    <link rel="manifest" href="/notes/manifest.json">
+    <link rel="apple-touch-icon" href="/notes/assets/img/logo-round.png">
+    <link rel="mask-icon" href="/notes/assets/img/logo-round.png" color="#35383b">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#35383b">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="/assets/img/logo-round.png">
+    <meta name="msapplication-TileColor" content="#000000">
+    <link rel="preload" href="/notes/assets/css/0.styles.b0162d90.css" as="style"><link rel="preload" href="/notes/assets/js/app.605d5c0b.js" as="script"><link rel="preload" href="/notes/assets/js/3.8f708b12.js" as="script"><link rel="preload" href="/notes/assets/js/16.4857e21c.js" as="script"><link rel="preload" href="/notes/assets/js/4.bb659c78.js" as="script"><link rel="prefetch" href="/notes/assets/js/10.39fb17f7.js"><link rel="prefetch" href="/notes/assets/js/11.db402a96.js"><link rel="prefetch" href="/notes/assets/js/12.ea8d3e4f.js"><link rel="prefetch" href="/notes/assets/js/13.d7a32ca2.js"><link rel="prefetch" href="/notes/assets/js/14.298f4872.js"><link rel="prefetch" href="/notes/assets/js/15.3f03ad98.js"><link rel="prefetch" href="/notes/assets/js/17.3b71bbfa.js"><link rel="prefetch" href="/notes/assets/js/18.a3f96746.js"><link rel="prefetch" href="/notes/assets/js/19.5de96238.js"><link rel="prefetch" href="/notes/assets/js/20.f5d60362.js"><link rel="prefetch" href="/notes/assets/js/21.afd58efb.js"><link rel="prefetch" href="/notes/assets/js/22.0ffbdbf6.js"><link rel="prefetch" href="/notes/assets/js/23.3cef561f.js"><link rel="prefetch" href="/notes/assets/js/24.20c8353a.js"><link rel="prefetch" href="/notes/assets/js/25.7f1dd85d.js"><link rel="prefetch" href="/notes/assets/js/26.6b2b55e3.js"><link rel="prefetch" href="/notes/assets/js/27.0de335cf.js"><link rel="prefetch" href="/notes/assets/js/28.abb844d7.js"><link rel="prefetch" href="/notes/assets/js/29.3cb5bf75.js"><link rel="prefetch" href="/notes/assets/js/30.6dcd6c45.js"><link rel="prefetch" href="/notes/assets/js/5.dad84c33.js"><link rel="prefetch" href="/notes/assets/js/6.d2a52d26.js"><link rel="prefetch" href="/notes/assets/js/7.c9e49557.js"><link rel="prefetch" href="/notes/assets/js/8.4b8b91e4.js"><link rel="prefetch" href="/notes/assets/js/9.8263cbc0.js"><link rel="prefetch" href="/notes/assets/js/vendors~flowchart.3fcdbb4e.js">
+    <link rel="stylesheet" href="/notes/assets/css/0.styles.b0162d90.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/notes/" class="home-link router-link-active"><img src="/notes/assets/img/logo-round.png" alt="𝓝𝓸𝓽𝓮𝓼" class="logo"> <span class="site-name can-hide">𝓝𝓸𝓽𝓮𝓼</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/notes/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><a href="/notes/english/" class="nav-link">
+  English
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="笔记" class="dropdown-title"><span class="title">笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/notes/note/dev/" class="nav-link router-link-active">
+  开发笔记
+</a></li><li class="dropdown-item"><!----> <a href="/notes/note/read/" class="nav-link">
+  阅读笔记
+</a></li></ul></div></div><div class="nav-item"><a href="/notes/plan/" class="nav-link">
+  计划
+</a></div><div class="nav-item"><a href="/notes/review/" class="nav-link">
+  总结
+</a></div><div class="nav-item"><a href="/notes/about.html" class="nav-link">
+  关于
+</a></div><div class="nav-item"><a href="//github.com/hefengxian/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/notes/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><a href="/notes/english/" class="nav-link">
+  English
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="笔记" class="dropdown-title"><span class="title">笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/notes/note/dev/" class="nav-link router-link-active">
+  开发笔记
+</a></li><li class="dropdown-item"><!----> <a href="/notes/note/read/" class="nav-link">
+  阅读笔记
+</a></li></ul></div></div><div class="nav-item"><a href="/notes/plan/" class="nav-link">
+  计划
+</a></div><div class="nav-item"><a href="/notes/review/" class="nav-link">
+  总结
+</a></div><div class="nav-item"><a href="/notes/about.html" class="nav-link">
+  关于
+</a></div><div class="nav-item"><a href="//github.com/hefengxian/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>安装 frp 进行内网穿透</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/notes/note/dev/2020-08-26-install-frp.html#背景" class="sidebar-link">背景</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/notes/note/dev/2020-08-26-install-frp.html#frp-server-安装笔记" class="sidebar-link">frp Server 安装笔记</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/notes/note/dev/2020-08-26-install-frp.html#frp-client-安装" class="sidebar-link">frp Client 安装</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="背景"><a href="#背景" class="header-anchor">#</a> 背景</h2> <p>最近入手了一个 QNAP 的 NAS 由于住处的网络是公寓统一的，所以没有路由器权限，不能使用路由器的 DDNS 进行端口转发；只能另做它法，以前为了穿透公司的内网研究了 frp，而且实验成功了</p> <p>上次也没有记录怎么处理的，这次有需要顺便记录一下。由于 NAS 有点小瑕疵店家叫发回去换一个，<s>所以客户端那边暂时不写，先在我的 Tencent Cloud 有公网 IP 的 VPS 搭建好 frp Server</s></p> <p>参考：</p> <ul><li><a href="https://github.com/fatedier/frp" target="_blank" rel="noopener noreferrer">https://github.com/fatedier/frp<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul> <blockquote><p>有公网 IP 的或者拨号路由器由自己控制的，可以不通过 frp 来实现；直接使用路由器的 DDNS + 花生壳之类的实现就可以了</p></blockquote> <h2 id="frp-server-安装笔记"><a href="#frp-server-安装笔记" class="header-anchor">#</a> frp Server 安装笔记</h2> <p>先 SSH 登录自己的云服务器，去 Github 上找到 frp 项目的 <a href="https://github.com/fatedier/frp/releases" target="_blank" rel="noopener noreferrer">Release<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> 页面，找到 Latest Release 下载对应系统的版本，例如使用 Ubuntu 18.04 64 位系统就下载 <code>frp_0.xxx.0_linux_amd64.tar.gz</code>，例如我下载的时候是 0.33.0 版本</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 下载</span>
+<span class="token function">wget</span> https://github.com/fatedier/frp/releases/download/v0.33.0/frp_0.33.0_linux_amd64.tar.gz
+
+<span class="token comment"># 解压</span>
+<span class="token function">tar</span> -zxvf frp_0.33.0_linux_amd64.tar.gz
+</code></pre></div><p>这里安装的话分几种形式，比如去改 frps.service 文件的，或者不改文件，复制相关文件到对应目录的；我这里采用不改 service 文件，而是采用复制对应的文件到对应的位置</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># 具体位置是依据 frp_0.33.0_linux_amd64/systemd/frps.service 的配置来决定的</span>
+<span class="token comment"># ExecStart=/usr/bin/frps -c /etc/frp/frps.ini</span>
+
+<span class="token comment"># 复制可执行文件</span>
+<span class="token function">cp</span> frps /usr/bin/
+
+<span class="token comment"># 复制配置文件</span>
+<span class="token function">mkdir</span> -p /etc/frp/ <span class="token operator">&amp;&amp;</span> <span class="token function">cp</span> frps.ini /etc/frp/
+
+<span class="token comment"># 复制 service 文件</span>
+<span class="token function">cp</span> systemd/frps.service /ete/systemd/system/
+</code></pre></div><p>修改 frpS 的配置</p> <div class="language-ini extra-class"><pre class="language-ini"><code><span class="token selector">[common]</span>
+<span class="token comment"># 各个端口的绑定</span>
+<span class="token constant">bind_port</span> <span class="token attr-value"><span class="token punctuation">=</span> 7777</span>
+<span class="token constant">kcp_bind_port</span> <span class="token attr-value"><span class="token punctuation">=</span> 7777</span>
+<span class="token constant">bind_udp_port</span> <span class="token attr-value"><span class="token punctuation">=</span> 7778</span>
+
+<span class="token comment"># 管理界面配置</span>
+<span class="token constant">dashboard_port</span> <span class="token attr-value"><span class="token punctuation">=</span> 7779</span>
+<span class="token constant">dashboard_user</span> <span class="token attr-value"><span class="token punctuation">=</span> xxx</span>
+<span class="token constant">dashboard_pwd</span> <span class="token attr-value"><span class="token punctuation">=</span> xxxxx</span>
+
+<span class="token comment"># 日志配置</span>
+<span class="token constant">log_file</span> <span class="token attr-value"><span class="token punctuation">=</span> /var/log/frps.log</span>
+<span class="token comment"># trace, debug, info, warn, error</span>
+<span class="token constant">log_level</span> <span class="token attr-value"><span class="token punctuation">=</span> warn</span>
+<span class="token constant">log_max_days</span> <span class="token attr-value"><span class="token punctuation">=</span> 7</span>
+
+<span class="token comment"># 客户端要填对了 Token 才可以使用</span>
+<span class="token constant">token</span> <span class="token attr-value"><span class="token punctuation">=</span> xxxx</span>
+</code></pre></div><blockquote><p>这里要要确定你的 VPS 的上述端口是开放的</p></blockquote> <p>然后执行 <code>systemctl start frps.service</code>，正常情况下已经搭建成功了</p> <p>可以通过 http://yourdomain:dashboard_port 访问控制台，输入对应设置的账号密码即可</p> <h2 id="frp-client-安装"><a href="#frp-client-安装" class="header-anchor">#</a> frp Client 安装</h2> <p>客户端其实主要也是配置如何编写</p> <ol><li>下载 frp，这里选择要进行内网穿透的系统类型，按情况下载</li> <li>把 frpc 复制到某个目录，修改 frpc.ini 就可以了</li> <li>看情况要不要设置成开机启动，这里不同的操作系统都不一样，需要的自己搜索如何操作即可</li></ol> <p>重点讲一下如何在我的 QNAP 上设置 frpc，因为资料比较少，一般推荐使用容器，有点奇怪；既然 QTS 本质是一个 Linux（并不完整，很多功能没有，比如 systemd/init.d 都没有，自启动不能依赖它们），那么我们直接通过 QNAP 的 <code>autorun.sh</code> 来让 frpc 开机自动运行</p> <p>根据 QNAP 官方的 wiki，找到如下的 autorun.sh 的编辑方法</p> <blockquote><p><a href="https://wiki.qnap.com/wiki/Running_Your_Own_Application_at_Startup" target="_blank" rel="noopener noreferrer">Running Your Own Application at Startup<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p></blockquote> <ol><li>首先在设置里开启 ssh 登录</li> <li>通过 ssh 连接上 NAS</li></ol> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># SSH 连接 NAS</span>
+<span class="token function">ssh</span> admin@192.168.x.xxx
+
+<span class="token comment"># 挂载</span>
+<span class="token function">mount</span> <span class="token variable"><span class="token variable">$(</span>/sbin/hal_app --get_boot_pd <span class="token assign-left variable">port_id</span><span class="token operator">=</span><span class="token number">0</span><span class="token variable">)</span></span><span class="token number">6</span> /tmp/config
+
+<span class="token comment"># 编辑文件</span>
+<span class="token function">vim</span> /tmp/config/autorun.sh
+
+<span class="token comment"># 赋权</span>
+<span class="token function">chmod</span> a+x /tmp/config/autorun.sh 
+
+<span class="token comment"># 取消挂载，这里官方标注为 IMPORTANT</span>
+<span class="token function">umount</span> /tmp/config
+</code></pre></div><p>frp 的文件放在哪里也有讲究，如果直接放在系统安装目录下面重启之后会消失；感觉 QTS 启动那么慢就是因为每次启动都是把系统镜像重新安装了一次</p> <p>所以要找到你的磁盘，把文件放到那里面，其实这样的话我们可以不用把文件拷贝到系统中了，可以通过共享目录就拷贝进去了；但是这个看个人了 QTS 的磁盘都挂载在 <code>/share</code> 下面，而且你建立的共享文件夹它都设置了符号链接，比如，我就将 frp 相关的文件放在了</p> <div class="language- extra-class"><pre class="language-text"><code>/share/playground/frp/
+</code></pre></div><p>这里重点说一下 autorun.sh 里面命令编写遇到的问题</p> <p><code>frpc</code> 的命令是阻塞的，不结束就会阻塞后面的操作；因为这个原因导致 NAS 重启之后优先级低一点的应用程序总是启动不了，导致 NAS 各种功能没法用；因为这个原因导致我还重置 NAS，浪费了大量的时间。</p> <p>所以我们要将命令写成如下这样</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># for frp</span>
+/share/playground/frp/frpc -c /share/playground/frp/frpc.ini <span class="token operator">&amp;</span>
+</code></pre></div><p>后面加个 <code>&amp;</code> ，这样处理之后就可以正常启动其他的程序了。</p> <p><code>frpc.ini</code> 文件示例：</p> <div class="language-ini extra-class"><pre class="language-ini"><code><span class="token selector">[common]</span>
+<span class="token constant">server_addr</span> <span class="token attr-value"><span class="token punctuation">=</span> xxxxxxx</span>
+<span class="token constant">server_port</span> <span class="token attr-value"><span class="token punctuation">=</span> xxxx</span>
+<span class="token constant">token</span> <span class="token attr-value"><span class="token punctuation">=</span> xxxxxxxxx</span>
+
+<span class="token comment">; NAS 管理窗口 HTTP 映射</span>
+<span class="token selector">[nas_http]</span>
+<span class="token constant">type</span> <span class="token attr-value"><span class="token punctuation">=</span> tcp</span>
+<span class="token constant">local_ip</span> <span class="token attr-value"><span class="token punctuation">=</span> 127.0.0.1</span>
+<span class="token constant">local_port</span> <span class="token attr-value"><span class="token punctuation">=</span> 5000</span>
+<span class="token constant">remote_port</span> <span class="token attr-value"><span class="token punctuation">=</span> xxxx</span>
+
+<span class="token comment">; SSH 端口映射</span>
+<span class="token selector">[ssh]</span>
+<span class="token constant">type</span> <span class="token attr-value"><span class="token punctuation">=</span> tcp</span>
+<span class="token constant">local_ip</span> <span class="token attr-value"><span class="token punctuation">=</span> 127.0.0.1</span>
+<span class="token constant">local_port</span> <span class="token attr-value"><span class="token punctuation">=</span> 22</span>
+<span class="token constant">remote_port</span> <span class="token attr-value"><span class="token punctuation">=</span> xxxx</span>
+</code></pre></div><p>这样你就可以通过你的域名 + 端口号来愉快的访问你的 NAS 了</p></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/hefengxian/notes/edit/master/src/note/dev/2020-08-26-install-frp.md" target="_blank" rel="noopener noreferrer">勘误</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">2021年3月1日星期一 21:23</span></div></footer> <!----> </main></div><div class="global-ui"><!----><!----></div></div>
+    <script src="/notes/assets/js/app.605d5c0b.js" defer></script><script src="/notes/assets/js/3.8f708b12.js" defer></script><script src="/notes/assets/js/16.4857e21c.js" defer></script><script src="/notes/assets/js/4.bb659c78.js" defer></script>
+  </body>
+</html>
